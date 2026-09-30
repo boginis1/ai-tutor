@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Private 1:1 AI tutoring from a trainer who has taught 5,000+ professionals. Bring your real work and leave with AI doing part of it.">
+<title>AI Tutoring for Busy Professionals | Scout Simply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+
+<style>
+:root{--bg:#f5f7fc;--surface:#fff;--sunk:#edf1f8;--ink:#111e39;--muted:#57647b;--line:#dce3ef;--juniper:#2155e8;--juniper-ink:#fff;--blaze:#c24c18;--sky:#e7eeff;--r:16px;--f-display:"Plus Jakarta Sans",sans-serif;--f-body:"Plus Jakarta Sans",sans-serif;--f-mono:"Plus Jakarta Sans",sans-serif;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--f-body);-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}a{color:inherit}p{margin:0}h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.045em;font-family:var(--f-display);text-wrap:balance}h1{font-size:clamp(2.8rem,5.2vw,4.7rem);font-weight:800}h2{font-size:clamp(2rem,3.3vw,3rem);font-weight:800}h3{font-size:1.4rem}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}.mono{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:13px 22px;border:1px solid transparent;border-radius:9px;text-decoration:none;font-size:.94rem;font-weight:700;line-height:1.4;transition:background .2s,transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px #12214918}.btn.primary{color:#fff;background:var(--juniper)}.btn.primary:hover{background:#1643c2}.btn.ghost{color:var(--ink);border-color:#c7d2e5;background:transparent}.btn.ghost:hover{background:var(--sky)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #f48145;outline-offset:5px}.skip{position:absolute;left:16px;top:-80px;background:white;padding:10px;z-index:20}.skip:focus{top:12px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.25rem;letter-spacing:-.06em;text-decoration:none}.logo i{display:grid;place-items:center;width:33px;height:36px;background:var(--ink);color:#fff;border-radius:9px;font-size:22px;font-style:normal;letter-spacing:-.1em}.logo i:before{content:'s';transform:translateY(-1px)}nav .links{display:flex;align-items:center;gap:28px;font-size:.88rem;font-weight:600}nav .links>a:not(.btn){text-decoration:none;color:var(--muted)}nav .btn{min-height:42px;padding:10px 18px}.hero{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:64px;padding:76px 0 64px}.hero>*{min-width:0}.kicker{color:var(--blaze);margin-bottom:20px;display:flex;align-items:center;gap:9px}.kicker:before{content:'';height:7px;width:7px;background:var(--blaze);border-radius:50%}.hero h1 em{font-style:normal;color:var(--juniper)}.lede{font-size:1.15rem;line-height:1.7;color:var(--muted);max-width:40ch;margin:24px 0 28px}.ctas{display:flex;gap:10px;flex-wrap:wrap}.proof{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding-top:28px;gap:20px;color:var(--muted);font-size:.86rem}.proof span{display:flex;gap:12px;align-items:center}.proof b{font-size:1.5rem;color:var(--ink);letter-spacing:-.05em;white-space:nowrap}.demo{position:relative;background:var(--ink);border-radius:22px;padding:26px;color:#fff;box-shadow:0 25px 60px #13264f20}.demo-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:20px}.demo-head .mono{color:#a9bbdf;font-size:.75rem}.demo-head small{font-size:.75rem;color:#cad6ec;border:1px solid #53617c;border-radius:5px;padding:2px 7px}.toggle{display:flex;padding:5px;border:1px solid #43516c;background:#1c2c49;border-radius:10px;margin-bottom:22px}.toggle button{border:0;flex:1;padding:11px 8px;border-radius:6px;cursor:pointer;color:#c1cce1;background:none;font-size:.88rem;font-weight:600}.toggle button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 2px 5px #0002}.bubble{font-size:.94rem;line-height:1.65;padding:18px;border-radius:10px}.bubble .mono{display:block;margin-bottom:8px;color:#a8bcdf;font-size:.75rem}.bubble.you{background:#243655;border:1px solid #3b5071;margin-bottom:12px}.bubble.ai{background:#f3f6ff;color:#1b2a45;min-height:169px}.bubble.ai .mono{color:#506589}.verdict{display:flex;gap:10px;align-items:flex-start;color:#c6d2e8;font-size:.85rem;line-height:1.6;margin-top:18px}.dot{width:7px;height:7px;flex:none;margin-top:7px;border-radius:50%;background:#ff995f}.demo[data-mode=after] .dot{background:#8db2ff}.demo-caption{color:#97aacd;font-size:.75rem;border-top:1px solid #384964;margin-top:18px;padding-top:14px}
+section{padding:80px 0;border-top:1px solid var(--line)}.blaze{color:var(--blaze);margin-bottom:16px}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.split h2{max-width:18ch}.pull{font-size:1.1rem;color:var(--muted);margin-top:24px;max-width:34ch}.checks{list-style:none;padding:0;margin:0}.checks li{position:relative;padding:0 0 18px 30px;margin-bottom:18px;border-bottom:1px solid var(--line);font-size:1rem}.checks li:before{content:'✓';position:absolute;left:0;color:var(--juniper);font-weight:800}.checks li:last-child{border:0;margin:0;padding-bottom:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}.step{border-top:3px solid var(--juniper);padding:26px 24px 28px;background:var(--surface);border-radius:0 0 14px 14px}.step .mono{color:var(--juniper)}.step h3{font-size:2rem;margin:20px 0 12px}.step p{font-size:1rem;color:var(--muted)}.topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.topics span{background:#e9eef8;color:#374b70;border-radius:6px;padding:8px 12px;font-size:.875rem}.pk-head{display:flex;align-items:end;justify-content:space-between;gap:24px}.pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}.pk{position:relative;display:flex;flex-direction:column;gap:18px;background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.pk.feature{border:2px solid var(--juniper);box-shadow:0 15px 35px #2155e812}.pk .tag{position:absolute;left:24px;top:-16px;background:var(--juniper);color:white;border-radius:6px;padding:5px 12px;font-size:.75rem;font-weight:800;letter-spacing:.06em}.pk .fmt{color:var(--muted);font-size:.75rem;letter-spacing:.07em}.pk h3{font-size:1.6rem}.price{font-size:3rem;line-height:1.1;font-weight:800;letter-spacing:-.06em;margin:6px 0}.pk ul{list-style:none;padding:0;margin:0 0 4px;display:grid;align-content:start;gap:13px;flex:1;color:var(--muted);font-size:.94rem}.pk li{padding-left:22px;position:relative}.pk li:before{content:'✓';position:absolute;left:0;color:var(--juniper)}.meta{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.75rem}.team{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:24px;padding:26px 28px;background:var(--sky);border-radius:14px;font-size:.95rem}.team p{max-width:69ch}.team .btn{flex-shrink:0}.guar{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:26px;color:var(--muted);font-size:.9rem}.guar p{max-width:65ch}.seal{border:1px solid #a5b6d4;border-radius:50%;height:62px;width:62px;flex:none;display:grid;place-content:center;text-align:center;font-size:.65rem;line-height:1.2;font-weight:800;letter-spacing:.02em;color:#405782}.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.card-id{position:relative;background:var(--ink);color:white;border-radius:18px;padding:36px;overflow:hidden}.card-id>.mono{color:#95ade0;margin-bottom:18px}.big{font-size:3.2rem;line-height:1.1;font-weight:800;letter-spacing:-.06em}.card-id dl{margin:30px 0 0;display:grid;gap:18px}.card-id dt{color:#9eafd0;font-size:.75rem}.card-id dd{margin:3px 0 0;font-size:1rem;font-weight:600}.about p+p{margin-top:18px;color:var(--muted)}.about h2{max-width:18ch}#faq{display:grid;grid-template-columns:.72fr 1.28fr;column-gap:70px}#faq>.blaze{grid-column:1;align-self:start}#faq>h2{grid-column:1;align-self:start}#faq>div{grid-column:2;grid-row:1/4;margin-top:0!important}details{border-bottom:1px solid var(--line);padding:20px 0}details:first-child{padding-top:0}summary{cursor:pointer;font-size:1rem;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:20px}summary::-webkit-details-marker{display:none}summary:after{content:'+';color:var(--juniper);font-size:1.4rem;font-weight:400;line-height:1.2}details[open] summary:after{content:'−'}details p{margin-top:14px;color:var(--muted);font-size:1rem}.final{background:var(--ink);color:white;padding:56px;border-radius:22px;border:0;margin-bottom:60px;position:relative}.final .blaze{color:#ffad7c}.final h2{max-width:26ch;font-size:clamp(2rem,3.6vw,3.25rem)}.final p:not(.blaze){color:#bccbe7;max-width:58ch;margin:22px 0 28px}.final .btn{background:#ff995f;color:#182441}.final .btn:hover{background:#ffb389}footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:26px 0 36px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+@media(min-width:1000px){.demo{transform:rotate(1deg)}}
+@media(max-width:1000px){.hero{gap:30px}.proof span{flex-direction:column;align-items:flex-start;gap:3px}.split,.about{gap:36px}.pk{padding:22px}.team{align-items:flex-start;flex-direction:column}#faq{gap:30px}.ctas .btn{width:100%}}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}nav{padding:20px 0}nav .links>a:not(.btn){display:none}.logo{font-size:1.15rem}nav .btn{font-size:.8rem;padding:10px 13px}.hero{grid-template-columns:1fr;padding:44px 0;gap:32px}h1{font-size:clamp(2.8rem,9vw,4.2rem);max-width:14ch}.lede{max-width:42ch}.ctas .btn{width:auto}.demo{padding:20px}.proof{gap:12px}.proof b{font-size:1.3rem}.proof span{font-size:.75rem}section{padding:54px 0}.split,.about{grid-template-columns:1fr;gap:30px}.split h2,.about h2{max-width:none}.pull{max-width:none}.steps,.pk-grid{grid-template-columns:1fr}.step{padding:24px}.step h3{margin-top:10px}.pk{padding:28px}.pk.feature{margin-top:10px}.pk-head{align-items:start;flex-direction:column;gap:16px}.guar{align-items:flex-start}.about .card-id{order:2}#faq{display:block}#faq>div{margin-top:30px!important}.final{padding:34px 25px;margin-bottom:30px}.final h2{font-size:2.15rem}.final .btn{width:100%}footer{font-size:.78rem}.mono{font-size:.75rem}.bubble .mono,.pk .fmt,.meta{font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%2210%22%20fill%3D%22%23111e39%22/%3E%3Ctext%20x%3D%2220%22%20y%3D%2229%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2231%22%20font-weight%3D%22bold%22%20fill%3D%22%23ff995f%22%3Es%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<main>
+
+<div class="wrap">
+<nav aria-label="Main navigation">
+  <a class="logo" href="#top"><i></i>Scout Simply</a>
+  <div class="links">
+    <a href="#how">How it works</a>
+    <a href="#packages">Packages</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn primary" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Free fit call</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <p class="mono kicker">Private AI tutoring · 1:1</p>
+    <h1>Get good at AI.<br><em>With a real teacher</em> by your side.</h1>
+    <p class="lede">Bring the work that’s on your desk. We’ll put AI to work on it, together. No jargon. No 40-hour course.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book a free 15-minute fit call</a>
+      <a class="btn ghost" href="#packages">See packages</a>
+    </div>
+
+  </div>
+
+  <div class="demo" id="demo" data-mode="before" aria-live="polite">
+    <div class="demo-head"><span class="mono">A little guidance. A big difference.</span><small>Example</small></div>
+    <div class="toggle" role="group" aria-label="Compare prompts">
+      <button id="btn-before" type="button" aria-pressed="true">On your own</button>
+      <button id="btn-after" type="button" aria-pressed="false">With guidance</button>
+    </div>
+    <div class="bubble you"><span class="mono">You</span><span id="you-text"></span></div>
+    <div class="bubble ai"><span class="mono">AI</span><span id="ai-text"></span></div>
+    <p class="verdict"><span class="dot"></span><span id="verdict"></span></p><p class="demo-caption">Same tool. More context. A much more useful starting point.</p>
+  </div>
+    <div class="proof">
+      <span><b>5,000+</b> professionals trained</span>
+      <span><b>30 yrs</b> in sales & marketing</span>
+      <span><b>Top 25</b> Most Extraordinary Minds</span>
+    </div>
+</header>
+</div>
+
+<div class="wrap">
+<section>
+  <div class="split">
+    <div>
+      <p class="mono blaze">Sound familiar?</p>
+      <h2>You've tried it. It just hasn't stuck.</h2>
+      <p class="pull">You don't need another course. You need someone next to you, showing you with your own work.</p>
+    </div>
+    <ul class="checks">
+      <li>You've tried ChatGPT or Claude, but the answers feel generic.</li>
+      <li>You know AI could save you hours. You don't know where to start.</li>
+      <li>You've watched the videos and saved the posts, and still nothing has changed in your week.</li>
+      <li>Everyone around you seems further ahead, and it's a little awkward to ask.</li>
+      <li><strong>This is for you if</strong> you sell, market, serve customers, or run a business. You don't need to be technical. Curiosity is plenty.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <p class="mono blaze">How it works</p>
+  <h2>Tell, show, do. The way adults actually learn.</h2>
+  <div class="steps">
+    <div class="step"><span class="mono">Step 1</span><h3>Tell</h3><p>I explain the one idea that matters, in plain English. Only what you need for the task in front of you.</p></div>
+    <div class="step"><span class="mono">Step 2</span><h3>Show</h3><p>I do it live, on a real example from your job, so you see exactly what good looks like.</p></div>
+    <div class="step"><span class="mono">Step 3</span><h3>Do</h3><p>You do it yourself while I coach, so you leave able to repeat it without me.</p></div>
+  </div>
+  <div class="topics" aria-label="What we can work on">
+    <span>Emails, proposals and posts in your voice</span>
+    <span>Research and prospect prep in minutes</span>
+    <span>Summarizing documents and meetings</span>
+    <span>Your own custom GPT or Claude Project</span>
+    <span>Turning spreadsheets into insights</span>
+    <span>Presentations, fast</span>
+    <span>Using AI safely with company data</span>
+    <span>Automating the repetitive parts of your week</span>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="pk-head">
+    <div>
+      <p class="mono blaze">Packages</p>
+      <h2>Pick the level of help that fits.</h2>
+    </div>
+    <p class="mono" style="color:var(--muted)">Three levels · all 1:1</p>
+  </div>
+
+  <div class="pk-grid">
+    <article class="pk">
+      <p class="mono fmt">1:1 · single session</p>
+      <h3>Unstuck Session</h3>
+      <p class="price">$195</p>
+      <ul><li>90 minutes, just you and me</li><li>Pre-session questionnaire</li><li>Recording and a personal action plan</li><li>7 days of email follow-up</li></ul>
+      <p class="meta mono"><span>Live time</span><span>90 min</span></p>
+      <a class="btn primary" href="https://buy.stripe.com/6oU4gy3aof8Q1c35l3bsc00" target="_blank" rel="noopener">Buy now · $195</a>
+      <a class="btn ghost" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book a free fit call</a>
+    </article>
+    <article class="pk feature">
+      <span class="tag">Four-session pack</span>
+      <p class="mono fmt">1:1 · 6 weeks</p>
+      <h3>AI Tutor Pack</h3>
+      <p class="price">$495</p>
+      <ul><li>Four 60-minute private sessions</li><li>Questions answered between sessions</li><li>A custom prompt library for your role</li></ul>
+      <p class="meta mono"><span>Live time</span><span>4 hrs</span></p>
+      <a class="btn primary" href="https://buy.stripe.com/28E9ASh1e1i04of4gZbsc01" target="_blank" rel="noopener">Buy now · $495</a>
+      <a class="btn ghost" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book a free fit call</a>
+    </article>
+    <article class="pk">
+      <p class="mono fmt">1:1 · premium</p>
+      <h3>Build-With-Me</h3>
+      <p class="price">$2,500</p>
+      <ul><li>Six private sessions</li><li>We build your custom GPT, Claude Project, or automation</li><li>30 days of support after launch</li></ul>
+      <p class="meta mono"><span>Live time</span><span>6 hrs</span></p>
+      <a class="btn primary" href="https://buy.stripe.com/28E6oG26kgcU8Ev4gZbsc02" target="_blank" rel="noopener">Buy now · $2,500</a>
+      <a class="btn ghost" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book a free fit call</a>
+    </article>
+  </div>
+
+  <div class="team">
+    <p><strong>Not sure which fits?</strong> Start with a free 15-minute AI Fit Call. You'll get a straight recommendation, even if it's "you don't need me."</p>
+    <a class="btn primary" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book the free fit call</a>
+  </div>
+
+  <div class="guar">
+    <div class="seal">FIRST<br>SESSION<br>PROMISE</div>
+    <p>If your first session doesn't feel worth it, tell me within 24 hours and I'll refund you. No awkward conversation.</p>
+  </div>
+</section>
+
+<section>
+  <div class="about">
+    <div class="card-id">
+      <p class="mono">Your tutor</p>
+      <p class="big">Holly Zoba</p>
+      <dl>
+        <div><dt class="mono">Trained</dt><dd>5,000+ professionals</dd></div>
+        <div><dt class="mono">Led</dt><dd>Sales & marketing teams, up to VP</dd></div>
+        <div><dt class="mono">Builds</dt><dd>AI tools, every day</dd></div>
+      </dl>
+    </div>
+    <div>
+      <p class="mono blaze">About me</p>
+      <h2>A teacher first. A builder too.</h2>
+      <p style="margin-top:18px">I've spent 30 years in sales and marketing, including 15 years leading teams up to the VP level, and I've trained more than 5,000 professionals. I'm also a developer who builds AI tools every day.</p>
+      <p>That combination matters. I can show you what's possible, and I can explain it in a way that sticks. My students don't leave with notes. They leave with things that work.</p>
+
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <p class="mono blaze">Questions</p>
+  <h2>Before you book</h2>
+  <div style="margin-top:24px">
+    <details><summary>Do I need to be technical?</summary><p>No. If you can write an email, you can do this.</p></details>
+    <details><summary>Which AI tools do you teach?</summary><p>ChatGPT, Claude, Gemini and Copilot. We use whichever you already have access to.</p></details>
+    <details><summary>Do I need a paid AI subscription?</summary><p>It helps, but you don't need one to start. I'll tell you if and when it's worth paying for.</p></details>
+    <details><summary>Is my company data safe?</summary><p>We cover what's OK to share with AI tools, and we practice on safe examples first.</p></details>
+    <details><summary>Are sessions recorded?</summary><p>Yes. You get the recording to rewatch whenever you need it.</p></details>
+    <details><summary>Can my employer pay?</summary><p>Yes. I can invoice your company for training or professional development budgets.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <p class="mono blaze">Next step</p>
+  <h2>Six months from now, AI could already be saving you five hours a week.</h2>
+  <p>Or you could still be meaning to learn it. A 15-minute call will tell us which package fits, or whether you need one at all.</p>
+  <a class="btn primary" href="https://calendly.com/holly-41/ai-fit-meeting" target="_blank" rel="noopener">Book your free fit call</a>
+</section>
+
+<footer>
+  <span>© 2026 Scout Simply, LLC · Red Rock, Arizona</span>
+  <span>Hotel professional? See <a href="https://hotelbschool.com" target="_blank" rel="noopener">hotelBschool</a></span>
+</footer>
+</div>
+
+</main>
+<script>
+(function(){
+  var demo=document.getElementById('demo');
+  var copy={
+    before:{you:'Write a follow-up email to a client.',
+      ai:'Dear [Client Name], I hope this email finds you well. I wanted to follow up on our recent conversation and see if you had any questions...',
+      v:'Generic. You would rewrite most of it.'},
+    after:{you:'Help me follow up with Dana about her 40-person retreat. She’s concerned about budget. Use a warm, direct tone. Ask which matters most: dates, room rate, or total cost. Don’t invent availability or prices.',
+      ai:'Hi Dana, thanks for talking through your retreat plans. Before I put together options for your 40-person group, what matters most: keeping your preferred dates, the room rate, or the total retreat cost? That will help me focus the proposal on what works for your team.',
+      v:'Relevant, specific, and ready for your review.'}
+  };
+  function set(m){
+    demo.dataset.mode=m;
+    document.getElementById('you-text').textContent=copy[m].you;
+    document.getElementById('ai-text').textContent=copy[m].ai;
+    document.getElementById('verdict').textContent=copy[m].v;
+    document.getElementById('btn-before').setAttribute('aria-pressed',m==='before');
+    document.getElementById('btn-after').setAttribute('aria-pressed',m==='after');
+  }
+  document.getElementById('btn-before').addEventListener('click',function(){set('before')});
+  document.getElementById('btn-after').addEventListener('click',function(){set('after')});
+  set('before');
+})();
+</script>
+</body>
+</html>
